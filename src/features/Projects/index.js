@@ -17,13 +17,16 @@ export const Projects = () => {
         dispatch(fetchProjects());
     }, [dispatch]);
 
+    const appName = window.location.pathname.split("/")[1];
+    const filteredProjects = projects.filter(project => project.name !== appName);
+
     return (
         <>
             <Heading />
             {loading ? <Loading /> :
                 error ? <Error /> :
                     <ProjectList>
-                        {projects.map(project => (
+                        {filteredProjects.map(project => (
                             <ProjectTile
                                 key={project.id}
                                 title={project.name}
