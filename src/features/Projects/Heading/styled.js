@@ -1,0 +1,61 @@
+import styled, { css } from "styled-components";
+import { ReactComponent as Symbol } from "../../../common/data/github.svg";
+
+export const Wrapper = styled.header`
+    color: ${({ theme }) => theme.colors.mineShaft};
+    text-align: center;
+    margin-top: 72px;
+    transition: color 0.3s;
+
+    ${({ $dark }) => $dark && css`
+        color: ${({ theme }) => theme.colors.white};
+    `}
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
+        margin-top: 48px;
+    }
+`;
+
+export const GithubSymbol = styled(Symbol)`
+    color: ${({ theme }) => theme.colors.scienceBlue};
+    width: 40px;
+    height: 40px;
+    transition: color 0.3s;
+
+    ${({ $dark }) => $dark && css`
+        color: ${({ theme }) => theme.colors.dodgerBlue};
+    `}
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
+        width: 32px;
+        height: 32px;
+    }
+`;
+
+export const Title = styled.h2`
+    font-weight: ${({ theme }) => theme.fontWeights.heavy};
+    font-size: 30px;
+    line-height: 36px;
+    margin: 12px 0 8px;
+    
+    @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
+        font-size: 18px;
+        line-height: 22px;
+        margin-bottom: 16px;
+    }
+`;
+
+export const Paragraph = styled.div`
+    font-size: 20px;
+    line-height: 28px;
+    
+    @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
+        font-size: 17px;
+        line-height: 24px;
+    }
+`;
