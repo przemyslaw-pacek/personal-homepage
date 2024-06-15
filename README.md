@@ -1,3 +1,29 @@
+# Personal Homepage
+
+![image](./animation.gif)
+
+## Description
+This is my personal homepage where you can find what I know, what I want to learn and what my projects are.
+
+## Demo
+If you want to check, clik [here](https://github.com/przemyslaw-pacek/personal-homepage/).
+
+## Technologies:
+- HTML
+- CSS
+- JavaScript
+- BEM
+- Flex
+- Grid
+- Immutability
+- React
+- React-Redux
+- Redux-Saga
+- Error handling
+- Webpack
+- Styled-components
+- Fetch
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -36,9 +36,9 @@ export const data = {
     ],
     githubAPI: "https://api.github.com/users/przemyslaw-pacek/repos?type=owner&sort=created",
     email: "ppacek@op.pl",
-    footer: `I'm always open to new projects whenever I have the time.
-        If you have a website, dashboard or mobile app in mind and need
-        some help to make your ideas come to life, feel free to contact me 🤞`,
+    footer: `I'm always open to new projects. If you have a website,
+        dashboard or mobile app in mind and need some help
+        to make your ideas come to life, feel free to contact me 🤞`,
     github: "https://github.com/przemyslaw-pacek",
     facebook: "https://www.facebook.com/profile.php?id=100041923693473",
     linkedIN: "",
