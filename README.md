@@ -6,7 +6,7 @@
 This is my personal homepage where you can find what I know, what I want to learn and what my projects are.
 
 ## Demo
-If you want to check, clik [here](https://github.com/przemyslaw-pacek/personal-homepage/).
+If you want to check, clik [here](https://przemyslaw-pacek.github.io/personal-homepage/).
 
 ## Technologies:
 - HTML
