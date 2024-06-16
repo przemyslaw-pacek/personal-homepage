@@ -97,6 +97,6 @@ export const Info = styled.div`
 
 export const Envelope = styled(envelope)`
     @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
-        width: 20px;
+        width: 18px;
     }
 `;
