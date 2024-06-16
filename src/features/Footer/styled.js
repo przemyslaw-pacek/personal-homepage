@@ -39,7 +39,7 @@ export const Caption = styled.div`
 `;
 
 export const Mail = styled.a`
-    color: ${({ theme }) => theme.colors.mineShaft};
+    color: inherit;
     display: block;
     text-decoration: none;
     font-weight: ${({ theme }) => theme.fontWeights.heavy};
@@ -58,6 +58,10 @@ export const Mail = styled.a`
         ${({ $dark }) => $dark && css`
             color: ${({ theme }) => theme.colors.dodgerBlue};
         `}
+    }
+
+    &:active {
+        color: inherit;
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
@@ -115,6 +119,10 @@ export const IconLink = styled.a`
         ${({ $dark }) => $dark && css`
             color: ${({ theme }) => theme.colors.dodgerBlue};
         `}
+    }
+
+    &:active {
+        color: inherit;
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
