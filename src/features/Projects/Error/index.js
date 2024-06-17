@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { selectDarkMode } from "../projectsSlice";
+import { selectDarkMode } from "../../Toggle/themeSlice";
 import { data } from "../../../common/data/data";
 import { Attention, DangerIcon, Text, Wrapper } from "./styled";
 import { Button } from "../../../common/Button";

@@ -109,7 +109,7 @@ export const Icons = styled.ul`
 
 export const IconLink = styled.a`
     color: inherit;
-    display: inline-flex;
+    display: flex;
     transition: 0.3s linear;
     
     &:hover {
@@ -126,11 +126,11 @@ export const IconLink = styled.a`
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
-        max-width: 40px;
+        width: 40px;
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
-        max-width: 32px;
+        width: 32px;
     }
 `;
 

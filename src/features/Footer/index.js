@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { data } from "../../common/data/data";
-import { selectDarkMode } from "../Projects/projectsSlice";
+import { selectDarkMode } from "../Toggle/themeSlice";
 import {
     Caption,
     IconFB,

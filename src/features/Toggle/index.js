@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { selectDarkMode, toggleTheme } from "../Projects/projectsSlice";
+import { selectDarkMode, toggleTheme } from "../Toggle/themeSlice";
 import { Button, Circle, Sun, Text, ToggleContent } from "./styled";
 
 export const Toggle = () => {
@@ -15,5 +15,5 @@ export const Toggle = () => {
                 </Circle>
             </Button>
         </ToggleContent>
-    )
+    );
 };

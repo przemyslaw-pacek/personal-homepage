@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { selectDarkMode } from "../projectsSlice";
+import { selectDarkMode } from "../../Toggle/themeSlice";
 import { GithubSymbol, Paragraph, Title, Wrapper } from "./styled";
 
 export const Heading = () => {

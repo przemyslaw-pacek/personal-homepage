@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { selectDarkMode } from "../projectsSlice";
+import { selectDarkMode } from "../../Toggle/themeSlice";
 import { Spinner, Text, Wrapper } from "./styled";
 
 export const Loading = () => {

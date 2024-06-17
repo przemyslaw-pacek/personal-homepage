@@ -16,7 +16,7 @@ function App() {
       <Projects />
       <Footer />
     </Container>
-  )
+  );
 };
 
 export default App;

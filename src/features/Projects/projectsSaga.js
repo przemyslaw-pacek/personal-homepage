@@ -1,7 +1,6 @@
-import { put, delay, call, takeLatest, takeEvery, select } from "redux-saga/effects";
-import { fetchProjects, fetchProjectsSuccess, fetchProjectsError, selectDarkMode } from "./projectsSlice";
+import { put, delay, call, takeLatest } from "redux-saga/effects";
+import { fetchProjects, fetchProjectsSuccess, fetchProjectsError } from "./projectsSlice";
 import { getProjects } from "./projectsAPI";
-import { saveThemeInLocalStorage } from "./themeLocalStorage";
 
 function* fetchProjectsHandler() {
     try {
@@ -13,12 +12,6 @@ function* fetchProjectsHandler() {
     }
 }
 
-function* saveThemeInLocalStorageHandler() {
-    const darkMode = yield select(selectDarkMode);
-    yield call(saveThemeInLocalStorage, darkMode);
-}
-
 export function* projectsSaga() {
     yield takeLatest(fetchProjects.type, fetchProjectsHandler);
-    yield takeEvery("*", saveThemeInLocalStorageHandler);
 }

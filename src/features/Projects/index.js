@@ -38,5 +38,5 @@ export const Projects = () => {
                     </ProjectList>
             }
         </>
-    )
+    );
 };

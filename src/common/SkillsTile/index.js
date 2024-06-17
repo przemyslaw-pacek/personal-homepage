@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { selectDarkMode } from "../../features/Projects/projectsSlice";
+import { selectDarkMode } from "../../features/Toggle/themeSlice";
 import { List, Title, Wrapper } from "./styled";
 
 export const SkillsTile = ({ title, skills }) => {
