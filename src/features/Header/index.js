@@ -6,11 +6,11 @@ import {
     Info,
     Picture,
     Title,
-    Caption,
     Wrapper,
     Envelope
 } from "./styled";
 import { Button } from "../../common/Button";
+import { Caption } from "../../common/Caption";
 
 export const Header = () => {
     const darkMode = useSelector(selectDarkMode);

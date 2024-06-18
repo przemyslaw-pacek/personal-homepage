@@ -46,21 +46,12 @@ export const Content = styled.div`
     }
 `;
 
-export const Caption = styled.div`
-    text-transform: uppercase;
-    font-weight: ${({ theme }) => theme.fontWeights.bold};
-    font-size: 12px;
-    margin-bottom: -8px;
-    letter-spacing: 0;
-    line-height: 16px;
-`;
-
 export const Title = styled.h1`
     color: ${({ theme }) => theme.colors.mineShaft};
     font-weight: ${({ theme }) => theme.fontWeights.heavy};
     font-size: 38px;
     line-height: 46px;
-    margin-bottom: 29px;
+    margin: 16px 0 32px;
     transition: color 0.3s;
 
     ${({ $dark }) => $dark && css`
@@ -70,12 +61,13 @@ export const Title = styled.h1`
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
         font-size: 30px;
         line-height: 32px;
-        margin: 16px 0 16px;
+        margin: 12px 0 16px;
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
         font-size: 22px;
         line-height: 27px;
+        margin-top: 8px;
     }
 `;
 

@@ -10,32 +10,16 @@ const jump = keyframes`
 `;
 
 export const Wrapper = styled.footer`
-    color: ${({ theme }) => theme.colors.mineShaft};
     max-width: 691px;
-    transition: color 0.3s;
-
-    ${({ $dark }) => $dark && css`
-        color: ${({ theme }) => theme.colors.white};
-    `}
 `;
 
-export const Caption = styled.div`
-    color: ${({ theme }) => theme.colors.slateGray};
-    text-transform: uppercase;
-    font-weight: ${({ theme }) => theme.fontWeights.bold};
-    font-size: 12px;
-    letter-spacing: 0;
-    line-height: 16px;
-    margin-bottom: 24px;
+export const Content = styled.div`
+    color: ${({ theme }) => theme.colors.mineShaft};
     transition: color 0.3s;
 
     ${({ $dark }) => $dark && css`
         color: ${({ theme }) => theme.colors.white};
     `}
-
-    @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
-        margin-bottom: 12px;
-    }
 `;
 
 const links = css`
@@ -63,19 +47,18 @@ export const Mail = styled.a`
     font-weight: ${({ theme }) => theme.fontWeights.heavy};
     font-size: 32px;
     line-height: 39px;
-
-    ${({ $dark }) => $dark && css`
-        color: ${({ theme }) => theme.colors.white};
-    `}
+    margin-top: 24px;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
         font-size: 26px;
         line-height: 30px;
+        margin-top: 18px;
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
         font-size: 18px;
         line-height: 22px;
+        margin-top: 12px;
     }
 `;
 
@@ -100,7 +83,7 @@ export const Info = styled.div`
 export const Icons = styled.ul`
     display: flex;
     gap: 24px;
-    padding: 0;   
+    padding: 0;
     
     @media(max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
         gap: 21px;
