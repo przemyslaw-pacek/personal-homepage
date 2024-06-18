@@ -38,23 +38,14 @@ export const Caption = styled.div`
     }
 `;
 
-export const Mail = styled.a`
+const links = css`
     color: inherit;
-    display: block;
-    text-decoration: none;
-    font-weight: ${({ theme }) => theme.fontWeights.heavy};
-    font-size: 32px;
-    line-height: 39px;
     transition: 0.3s linear;
-
-    ${({ $dark }) => $dark && css`
-        color: ${({ theme }) => theme.colors.white};
-    `}
-
+    
     &:hover {
         color: ${({ theme }) => theme.colors.scienceBlue};
         animation: ${jump} 0.3s;
-
+        
         ${({ $dark }) => $dark && css`
             color: ${({ theme }) => theme.colors.dodgerBlue};
         `}
@@ -63,6 +54,19 @@ export const Mail = styled.a`
     &:active {
         color: inherit;
     }
+`;
+
+export const Mail = styled.a`
+    ${links}
+    display: block;
+    text-decoration: none;
+    font-weight: ${({ theme }) => theme.fontWeights.heavy};
+    font-size: 32px;
+    line-height: 39px;
+
+    ${({ $dark }) => $dark && css`
+        color: ${({ theme }) => theme.colors.white};
+    `}
 
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
         font-size: 26px;
@@ -108,40 +112,34 @@ export const Icons = styled.ul`
 `;
 
 export const IconLink = styled.a`
-    color: inherit;
+    ${links}
     display: flex;
-    transition: 0.3s linear;
-    
-    &:hover {
-        color: ${({ theme }) => theme.colors.scienceBlue};
-        animation: ${jump} 0.3s;
-        
-        ${({ $dark }) => $dark && css`
-            color: ${({ theme }) => theme.colors.dodgerBlue};
-        `}
-    }
+`;
 
-    &:active {
-        color: inherit;
-    }
-
+const iconStyles = css`
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
         width: 40px;
+        height: auto;
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
         width: 32px;
+        height: auto
     }
 `;
 
 export const IconGithub = styled(github)`
+    ${iconStyles}
 `;
 
 export const IconFB = styled(facebook)`
+    ${iconStyles}
 `;
 
 export const IconLinkedIN = styled(linkedIN)`
+    ${iconStyles}
 `;
 
 export const IconInstagram = styled(instagram)`
+    ${iconStyles}
 `;
