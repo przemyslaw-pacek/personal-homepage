@@ -7,10 +7,10 @@ export const Container = styled.main`
     letter-spacing: 0.05em;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
-        margin: 64px auto;
+        margin: 64px auto 58px;
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
-        margin: 21px auto;
+        margin: 21px auto 31px;
     }
 `
