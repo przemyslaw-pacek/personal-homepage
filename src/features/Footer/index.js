@@ -3,6 +3,7 @@ import { data } from "../../common/data/data";
 import { selectDarkMode } from "../Toggle/themeSlice";
 import {
     Content,
+    Hand,
     IconFB,
     IconGithub,
     IconInstagram,
@@ -25,7 +26,11 @@ export const Footer = () => {
                 <Mail $dark={darkMode} href={`mailto:${data.email}`}>
                     {data.email}
                 </Mail>
-                <Info>{data.footer}</Info>
+                <Info>
+                    {data.footer}
+                    {" "}
+                    <Hand />
+                </Info>
                 <Icons>
                     {data.github &&
                         <IconLink

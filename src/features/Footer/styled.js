@@ -1,4 +1,5 @@
 import styled, { css, keyframes } from "styled-components";
+import { ReactComponent as hand } from "./hand.svg";
 import { ReactComponent as github } from "../../common/data/github.svg";
 import { ReactComponent as facebook } from "./facebook.svg";
 import { ReactComponent as linkedIN } from "./linkedIN.svg";
@@ -63,6 +64,7 @@ export const Mail = styled.a`
 `;
 
 export const Info = styled.div`
+    max-width: 670px;
     font-size: 18px;
     line-height: 25px;
     margin: 24px 0 56px;
@@ -77,6 +79,22 @@ export const Info = styled.div`
         font-size: 14px;
         line-height: 17px;
         margin: 12px 0 40px;
+    }
+`;
+
+export const Hand = styled(hand)`
+    margin-bottom: -5.4px;
+    
+    @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
+        width: 20px;
+        height: 20px;
+        margin-bottom: -4px;
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
+        width: 16px;
+        height: 16px;
+        margin-bottom: -2.6px;
     }
 `;
 

@@ -14,7 +14,7 @@ export const Wrapper = styled.header`
 export const Picture = styled.div`
     width: 384px;
     height: 384px;
-    background-image: url("${image}");
+    background-image: url('${image}');
     background-size: cover;
     background-position: center;
     border-radius: 50%;
