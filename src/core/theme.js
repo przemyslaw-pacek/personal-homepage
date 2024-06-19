@@ -18,7 +18,7 @@ export const theme = {
         slateGray: "#6E7E91",
         doveGray: "#6E6E6E",
         mineShaft: "#252525",
-        mineShaft72: "#363636B8",  
+        mineShaft72: "#363636B8",
     },
 
     fontWeights: {

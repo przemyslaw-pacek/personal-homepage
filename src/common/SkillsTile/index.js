@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { selectDarkMode } from "../../features/Toggle/themeSlice";
-import { List, Title, Wrapper } from "./styled";
+import { Item, List, Title, Wrapper } from "./styled";
 
 export const SkillsTile = ({ title, skills }) => {
     const darkMode = useSelector(selectDarkMode);
@@ -9,8 +9,8 @@ export const SkillsTile = ({ title, skills }) => {
         <Wrapper $dark={darkMode}>
             <Title $dark={darkMode}>{title}</Title>
             <List $dark={darkMode}>
-                {skills?.map(skill =>
-                    <li key={skill}>{skill}</li>
+                {skills.map(skill =>
+                    <Item key={skill}>{skill}</Item>
                 )}
             </List>
         </Wrapper>
