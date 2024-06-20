@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
 import { data } from "../../common/data/data";
-import { selectDarkMode } from "../Toggle/themeSlice";
+import { selectTheme } from "../Toggle/themeSlice";
 import {
     Content,
     Hand,
@@ -17,7 +17,7 @@ import {
 import { Caption } from "../../common/Caption";
 
 export const Footer = () => {
-    const darkMode = useSelector(selectDarkMode);
+    const darkMode = useSelector(selectTheme);
 
     return (
         <Wrapper>

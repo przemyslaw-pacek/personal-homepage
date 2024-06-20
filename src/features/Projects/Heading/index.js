@@ -1,9 +1,9 @@
 import { useSelector } from "react-redux";
-import { selectDarkMode } from "../../Toggle/themeSlice";
+import { selectTheme } from "../../Toggle/themeSlice";
 import { GithubSymbol, Paragraph, Title, Wrapper } from "./styled";
 
 export const Heading = () => {
-    const darkMode = useSelector(selectDarkMode);
+    const darkMode = useSelector(selectTheme);
 
     return (
         <Wrapper $dark={darkMode}>

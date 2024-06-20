@@ -1,9 +1,9 @@
 import { call, takeEvery, select } from "redux-saga/effects";
-import { selectDarkMode } from "./themeSlice";
+import { selectTheme } from "./themeSlice";
 import { saveThemeInLocalStorage } from "./themeLocalStorage";
 
 function* saveThemeInLocalStorageHandler() {
-    const darkMode = yield select(selectDarkMode);
+    const darkMode = yield select(selectTheme);
     yield call(saveThemeInLocalStorage, darkMode);
 }
 

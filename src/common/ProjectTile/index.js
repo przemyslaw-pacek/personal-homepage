@@ -1,9 +1,9 @@
 import { useSelector } from "react-redux";
 import { Content, Description, Headline, Link, LinkTitle, Links } from "./styled";
-import { selectDarkMode } from "../../features/Toggle/themeSlice";
+import { selectTheme } from "../../features/Toggle/themeSlice";
 
 export const ProjectTile = ({ codeLink, demoLink, description, title }) => {
-    const darkMode = useSelector(selectDarkMode);
+    const darkMode = useSelector(selectTheme);
 
     return (
         <Content $dark={darkMode}>

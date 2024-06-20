@@ -17,6 +17,6 @@ export const {
     toggleTheme,
 } = themeSlice.actions;
 
-export const selectDarkMode = state => state.theme.darkMode;
+export const selectTheme = state => state.theme.darkMode;
 
 export default themeSlice.reducer;

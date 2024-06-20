@@ -1,11 +1,11 @@
 import { useSelector } from "react-redux";
-import { selectDarkMode } from "../../Toggle/themeSlice";
+import { selectTheme } from "../../Toggle/themeSlice";
 import { data } from "../../../common/data/data";
 import { Attention, DangerIcon, Text, Wrapper } from "./styled";
 import { Button } from "../../../common/Button";
 
 export const Error = () => {
-    const darkMode = useSelector(selectDarkMode);
+    const darkMode = useSelector(selectTheme);
 
     return (
         <Wrapper $dark={darkMode}>
