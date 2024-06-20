@@ -71,22 +71,6 @@ export const Title = styled.h1`
     }
 `;
 
-export const Info = styled.div`
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 32px;
-
-    @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
-        line-height: 26px;
-        margin-bottom: 24px;
-    }
-
-    @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
-        font-size: 17px;
-        line-height: 24px;
-    }
-`;
-
 export const Envelope = styled(envelope)`
     @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
         width: 18px;

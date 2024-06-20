@@ -10,6 +10,7 @@ export const Button = styled.a`
     font-weight: ${({ theme }) => theme.fontWeights.semiBold};
     font-size: 20px;
     padding: 12px 16px;
+    margin-top: 32px;
     border-radius: 4px;
     border: 1px solid ${({ theme }) => theme.colors.iron30};
     transition: background 0.3s, 0.3s linear;
@@ -36,6 +37,10 @@ export const Button = styled.a`
 
     &:active {
         box-shadow: 0px 2px 0px 0px ${({ theme }) => theme.colors.parsley} inset;
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
+        margin-top: 24px;
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {

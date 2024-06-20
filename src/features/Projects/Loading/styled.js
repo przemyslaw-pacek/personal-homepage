@@ -26,20 +26,10 @@ export const Wrapper = styled.div`
     }
 `;
 
-export const Text = styled.p`
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 48px;
-    
-    @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
-        font-size: 17px;
-        line-height: 24px;
-    }
-`;
-
 export const Spinner = styled(spinner)`
     animation: ${rotate} 1s linear infinite;
     color: ${({ theme }) => theme.colors.scienceBlue};
+    margin-top: 48px;
     transition: color 0.3s;
 
     & circle {

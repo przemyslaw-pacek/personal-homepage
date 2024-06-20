@@ -49,13 +49,3 @@ export const Title = styled.h2`
         margin-bottom: 16px;
     }
 `;
-
-export const Paragraph = styled.div`
-    font-size: 20px;
-    line-height: 28px;
-    
-    @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
-        font-size: 17px;
-        line-height: 24px;
-    }
-`;

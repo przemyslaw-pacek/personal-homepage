@@ -31,22 +31,13 @@ export const Attention = styled.h3`
     font-size: 24px;
     line-height: 30px;
     margin: 16px 0 32px;
-    
-    @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
-        font-size: 17px;
-        line-height: 24px;
-        margin: 8px 0 16px;
-    }
-`;
 
-export const Text = styled.p`
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 32px;
+    @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
+        margin: 12px 0 24px;
+    }
     
     @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
         font-size: 17px;
         line-height: 24px;
-        margin-bottom: 16px;
     }
 `;
