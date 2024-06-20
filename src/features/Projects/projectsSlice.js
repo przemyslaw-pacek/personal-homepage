@@ -26,4 +26,6 @@ export const {
     fetchProjectsError
 } = projectsSlice.actions;
 
+export const selectProjectsState = state => state.projects;
+
 export default projectsSlice.reducer;

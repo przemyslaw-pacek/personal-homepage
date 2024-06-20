@@ -5,13 +5,11 @@ import { Heading } from "./Heading";
 import { ProjectList } from "./styled";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchProjects } from "./projectsSlice";
+import { fetchProjects, selectProjectsState } from "./projectsSlice";
 
 export const Projects = () => {
     const dispatch = useDispatch();
-    const loading = useSelector(state => state.projects.loading);
-    const error = useSelector(state => state.projects.error);
-    const projects = useSelector(state => state.projects.projects);
+    const { loading, error, projects } = useSelector(selectProjectsState);
 
     useEffect(() => {
         dispatch(fetchProjects());
