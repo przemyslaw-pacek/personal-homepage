@@ -71,7 +71,7 @@ export const Info = styled.div`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
         font-size: 16px;
-        line-height: 24px;
+        line-height: 21px;
         margin: 18px 0 48px;
     }
 

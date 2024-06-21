@@ -39,8 +39,8 @@ export const Title = styled.h2`
     margin: 12px 0 8px;
     
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
-        font-size: 26px;
-        line-height: 30px;
+        font-size: 24px;
+        line-height: 29px;
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
