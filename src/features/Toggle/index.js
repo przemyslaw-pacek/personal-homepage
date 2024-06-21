@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { selectTheme, toggleTheme } from "../Toggle/themeSlice";
-import { Button, Circle, Sun, Text, ToggleContent } from "./styled";
+import { Button, Circle, Sun, ToggleContent } from "./styled";
+import { Caption } from "../../common/Caption";
 
 export const Toggle = () => {
     const dispatch = useDispatch();
@@ -8,7 +9,7 @@ export const Toggle = () => {
 
     return (
         <ToggleContent>
-            <Text>dark mode {darkMode ? "on" : "off"}</Text>
+            <Caption $toggleMode>dark mode {darkMode ? "on" : "off"}</Caption>
             <Button $dark={darkMode} onClick={() => dispatch(toggleTheme())}>
                 <Circle $dark={darkMode}>
                     <Sun />

@@ -1,17 +1,5 @@
-import styled, { css, keyframes } from "styled-components";
+import styled, { css } from "styled-components";
 import { ReactComponent as sun } from "./sun.svg";
-
-const fadeInOut = keyframes`
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-`;
 
 export const ToggleContent = styled.div`
     margin-bottom: -26px;
@@ -23,18 +11,7 @@ export const ToggleContent = styled.div`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
         margin-bottom: -13px;
-        grid-template-columns: 46px;
-    }
-`;
-
-export const Text = styled.span`
-    text-transform: uppercase;
-    font-weight: ${({ theme }) => theme.fontWeights.bold};
-    font-size: 12px;
-    animation: ${fadeInOut} 0.3s;
-
-    @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
-        display: none;
+        grid-template-columns: auto;
     }
 `;
 
