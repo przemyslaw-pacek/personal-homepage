@@ -1,18 +1,24 @@
+import { data } from '../common/data/data';
 import { Container } from '../common/Container';
-import { Footer } from '../features/Footer';
-import { Toggle } from '../features/Toggle';
-import { Header } from '../features/Header';
-import { Projects } from '../features/Projects';
-import { Skillset } from '../features/Skillset';
-import { ToLearn } from '../features/ToLearn';
+import { Toggle } from '../homepage/Toggle';
+import { Header } from '../homepage/Header';
+import {SkillsTile} from '../common/SkillsTile';
+import { Projects } from '../homepage/Projects';
+import { Footer } from '../homepage/Footer';
 
 function App() {
   return (
     <Container>
       <Toggle />
       <Header />
-      <Skillset />
-      <ToLearn />
+      <SkillsTile
+        title="My skillset includes 🛠️"
+        skills={data.skills}
+      />
+      <SkillsTile
+        title="What I want to learn next 🚀"
+        skills={data.toLearn}
+      />
       <Projects />
       <Footer />
     </Container>
