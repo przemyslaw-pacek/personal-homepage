@@ -19,6 +19,13 @@ import { Caption } from "../../common/Caption";
 export const Footer = () => {
     const darkMode = useSelector(selectTheme);
 
+    const socialMediaLinks = [
+        { key: 'github', icon: <IconGithub /> },
+        { key: 'facebook', icon: <IconFB /> },
+        { key: 'linkedIN', icon: <IconLinkedIN /> },
+        { key: 'instagram', icon: <IconInstagram /> }
+    ];
+
     return (
         <Wrapper>
             <Caption>Let's talk!</Caption>
@@ -32,42 +39,19 @@ export const Footer = () => {
                     <Hand />
                 </Info>
                 <Icons>
-                    {data.github &&
-                        <IconLink
-                            $dark={darkMode}
-                            href={data.github}
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            <IconGithub />
-                        </IconLink>
-                    }
-                    {data.facebook &&
-                        <IconLink
-                            $dark={darkMode}
-                            href={data.facebook}
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            <IconFB />
-                        </IconLink>
-                    }
-                    {data.linkedIN &&
-                        <IconLink
-                            $dark={darkMode}
-                            href={data.linkedIN}
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            <IconLinkedIN />
-                        </IconLink>
-                    }
-                    {data.instagram &&
-                        <IconLink
-                            $dark={darkMode}
-                            href={data.instagram}
-                            target="_blank"
-                            rel="noopener noreferrer">
-                            <IconInstagram />
-                        </IconLink>
-                    }
+                    {socialMediaLinks.map(link =>
+                        data[link.key] && (
+                            <IconLink
+                                key={link.key}
+                                $dark={darkMode}
+                                href={data[link.key]}
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                {link.icon}
+                            </IconLink>
+
+                        )
+                    )}
                 </Icons>
             </Content>
         </Wrapper>

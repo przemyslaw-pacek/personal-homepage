@@ -1,10 +1,10 @@
-import { data } from '../common/data/data';
 import { Container } from '../common/Container';
 import { Toggle } from '../homepage/Toggle';
 import { Header } from '../homepage/Header';
-import {SkillsTile} from '../common/SkillsTile';
+import { SkillsTile } from '../common/SkillsTile';
 import { Projects } from '../homepage/Projects';
 import { Footer } from '../homepage/Footer';
+import { data } from '../common/data/data';
 
 function App() {
   return (
