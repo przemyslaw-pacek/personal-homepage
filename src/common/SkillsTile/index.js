@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { selectTheme } from "../../features/Toggle/themeSlice";
+import { selectTheme } from "../../homepage/Toggle/themeSlice";
 import { Item, List, Title, Wrapper } from "./styled";
 
 export const SkillsTile = ({ title, skills }) => {
