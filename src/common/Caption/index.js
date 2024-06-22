@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const Caption = styled.div`
+export const Caption = styled.header`
     text-transform: uppercase;
     font-weight: ${({ theme }) => theme.fontWeights.bold};
     font-size: 12px;
