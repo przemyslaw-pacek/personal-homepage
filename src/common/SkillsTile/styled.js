@@ -1,16 +1,12 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const Wrapper = styled.section`
-    background: ${({ theme }) => theme.colors.white};
+    background: ${({ theme }) => theme.colors.background2};
     border-radius: 4px;
     margin-top: 72px;
-    box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.colors.violet3},
-                0px -2px 50px 0px ${({ theme }) => theme.colors.violet2};
+    box-shadow: 0px 16px 58px 0px ${({ theme }) => theme.colors.tileShadow},
+                0px -2px 50px 0px ${({ theme }) => theme.colors.tileShadow2};
     transition: background 0.3s;
-
-    ${({ $dark }) => $dark && css`
-        background: ${({ theme }) => theme.colors.mineShaft72};
-    `}
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
         margin-top: 48px;
@@ -18,19 +14,14 @@ export const Wrapper = styled.section`
 `;
 
 export const Title = styled.h2`
-    color: ${({ theme }) => theme.colors.mineShaft};
+    color: ${({ theme }) => theme.colors.text2};
     font-weight: ${({ theme }) => theme.fontWeights.heavy};
     font-size: 30px;
     line-height: 36px;
     padding: 32px 0 15px;
     margin: 32px;
-    border-bottom: 1px solid ${({ theme }) => theme.colors.mercury};
-    transition: color 0.3s;
-
-    ${({ $dark }) => $dark && css`
-        color: ${({ theme }) => theme.colors.white};
-        border-color: ${({ theme }) => theme.colors.iron30};
-    `}
+    border-bottom: 1px solid ${({ theme }) => theme.colors.background3};
+    transition: color 0.3s, border 0.3s;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
         font-size: 26px;
@@ -56,13 +47,9 @@ export const List = styled.ul`
     font-size: 18px;
 
     ::marker {
-        color: ${({ theme }) => theme.colors.scienceBlue};
+        color: ${({ theme }) => theme.colors.blue};
         font-size: 23px;
         transition: color 0.3s;
-
-        ${({ $dark }) => $dark && css`
-            color: ${({ theme }) => theme.colors.dodgerBlue};
-        `}
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {

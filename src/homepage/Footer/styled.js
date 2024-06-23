@@ -1,6 +1,6 @@
 import styled, { css, keyframes } from "styled-components";
 import { ReactComponent as hand } from "./hand.svg";
-import { ReactComponent as github } from "../../common/data/github.svg";
+import { ReactComponent as github } from "./github.svg";
 import { ReactComponent as facebook } from "./facebook.svg";
 import { ReactComponent as linkedIN } from "./linkedIN.svg";
 import { ReactComponent as instagram } from "./instagram.svg";
@@ -15,12 +15,8 @@ export const Wrapper = styled.footer`
 `;
 
 export const Content = styled.div`
-    color: ${({ theme }) => theme.colors.mineShaft};
+    color: ${({ theme }) => theme.colors.text2};
     transition: color 0.3s;
-
-    ${({ $dark }) => $dark && css`
-        color: ${({ theme }) => theme.colors.white};
-    `}
 `;
 
 const links = css`
@@ -28,12 +24,8 @@ const links = css`
     transition: 0.3s linear;
     
     &:hover {
-        color: ${({ theme }) => theme.colors.scienceBlue};
+        color: ${({ theme }) => theme.colors.blue};
         animation: ${jump} 0.3s;
-        
-        ${({ $dark }) => $dark && css`
-            color: ${({ theme }) => theme.colors.dodgerBlue};
-        `}
     }
 
     &:active {

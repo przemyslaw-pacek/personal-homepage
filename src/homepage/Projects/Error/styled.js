@@ -1,15 +1,11 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { ReactComponent as danger } from "./danger.svg";
 
 export const Wrapper = styled.div`
     text-align: center;
     margin: 88px 0 140px;
-    color: ${({ theme }) => theme.colors.mineShaft};
+    color: ${({ theme }) => theme.colors.text2};
     transition: color 0.3s;
-
-    ${({ $dark }) => $dark && css`
-        color: ${({ theme }) => theme.colors.white};
-    `}
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
         margin: 60px 0 102px;

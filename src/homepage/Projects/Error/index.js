@@ -1,22 +1,16 @@
-import { useSelector } from "react-redux";
-import { selectTheme } from "../../Toggle/themeSlice";
 import { data } from "../../../common/data/data";
 import { Attention, DangerIcon, Wrapper } from "./styled";
 import { ButtonLink } from "../../../common/ButtonLink";
 import { Paragraph } from "../../../common/Paragraph";
 
-export const Error = () => {
-    const darkMode = useSelector(selectTheme);
-
-    return (
-        <Wrapper $dark={darkMode}>
-            <DangerIcon />
-            <Attention>Ooops! Something went wrong…</Attention>
-            <Paragraph>Sorry, failed to load Github projects.<br />
-                You can check them directly on Github.</Paragraph>
-            <ButtonLink $dark={darkMode} href={data.github} target="_blank" rel="noopener noreferrer">
-                Go to Github
-            </ButtonLink>
-        </Wrapper>
-    );
-};
+export const Error = () => (
+    <Wrapper>
+        <DangerIcon />
+        <Attention>Ooops! Something went wrong…</Attention>
+        <Paragraph>Sorry, failed to load Github projects.<br />
+            You can check them directly on Github.</Paragraph>
+        <ButtonLink href={data.github} target="_blank" rel="noopener noreferrer">
+            Go to Github
+        </ButtonLink>
+    </Wrapper>
+);

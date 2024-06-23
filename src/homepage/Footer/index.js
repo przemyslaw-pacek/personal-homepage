@@ -1,6 +1,4 @@
-import { useSelector } from "react-redux";
 import { data } from "../../common/data/data";
-import { selectTheme } from "../Toggle/themeSlice";
 import {
     Content,
     Hand,
@@ -17,8 +15,6 @@ import {
 import { Caption } from "../../common/Caption";
 
 export const Footer = () => {
-    const darkMode = useSelector(selectTheme);
-
     const socialMediaLinks = [
         { key: 'github', icon: <IconGithub /> },
         { key: 'facebook', icon: <IconFB /> },
@@ -29,8 +25,8 @@ export const Footer = () => {
     return (
         <Wrapper>
             <Caption>Let's talk!</Caption>
-            <Content $dark={darkMode}>
-                <Mail $dark={darkMode} href={`mailto:${data.email}`}>
+            <Content>
+                <Mail href={`mailto:${data.email}`}>
                     {data.email}
                 </Mail>
                 <Info>
@@ -43,7 +39,6 @@ export const Footer = () => {
                         data[link.key] && (
                             <IconLink
                                 key={link.key}
-                                $dark={darkMode}
                                 href={data[link.key]}
                                 target="_blank"
                                 rel="noopener noreferrer">

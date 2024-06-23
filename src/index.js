@@ -2,19 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from '../src/core/App';
 import reportWebVitals from './reportWebVitals';
+import store from './core/store';
 import { ThemeProvider } from 'styled-components';
-import { theme } from '../src/core/theme';
+import { darkTheme, lightTheme } from '../src/core/theme';
 import { GlobalStyle } from '../src/core/GlobalStyle';
 import { Provider, useSelector } from 'react-redux';
-import store from './core/store';
 import { selectTheme } from './homepage/Toggle/themeSlice';
 
 const RootComponent = () => {
   const darkMode = useSelector(selectTheme);
 
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle $dark={darkMode} />
+    <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <GlobalStyle />
       <App />
     </ThemeProvider>
   );

@@ -10,7 +10,7 @@ export const Toggle = () => {
     return (
         <ToggleContent>
             <Caption $toggleMode>dark mode {darkMode ? "on" : "off"}</Caption>
-            <Button $dark={darkMode} onClick={() => dispatch(toggleTheme())}>
+            <Button onClick={() => dispatch(toggleTheme())}>
                 <Circle $dark={darkMode}>
                     <Sun />
                 </Circle>

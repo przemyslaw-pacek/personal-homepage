@@ -1,4 +1,4 @@
-import styled, { css, keyframes } from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { ReactComponent as spinner } from "./spinner.svg";
 
 const rotate = keyframes`
@@ -10,12 +10,8 @@ const rotate = keyframes`
 export const Wrapper = styled.div`
     text-align: center;
     margin: 88px 0 140px;
-    color: ${({ theme }) => theme.colors.mineShaft};
+    color: ${({ theme }) => theme.colors.text2};
     transition: color 0.3s;
-
-    ${({ $dark }) => $dark && css`
-        color: ${({ theme }) => theme.colors.white};
-    `}
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
         margin: 60px 0 102px;
@@ -28,21 +24,13 @@ export const Wrapper = styled.div`
 
 export const Spinner = styled(spinner)`
     animation: ${rotate} 1s linear infinite;
-    color: ${({ theme }) => theme.colors.scienceBlue};
+    color: ${({ theme }) => theme.colors.blue};
     margin-top: 48px;
     transition: color 0.3s;
 
     & circle {
-        stroke: ${({ theme }) => theme.colors.iron};
+        stroke: ${({ theme }) => theme.colors.circle};
     }
-
-    ${({ $dark }) => $dark && css`
-        color: ${({ theme }) => theme.colors.dodgerBlue};
-
-        & circle {
-            stroke: ${({ theme }) => theme.colors.doveGray};
-        }
-    `}
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
         width: 130px;

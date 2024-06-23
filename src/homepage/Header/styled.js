@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import image from "../../common/data/image.png";
 import { ReactComponent as envelope } from "./envelope.svg";
 
@@ -47,16 +47,12 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.h1`
-    color: ${({ theme }) => theme.colors.mineShaft};
+    color: ${({ theme }) => theme.colors.text2};
     font-weight: ${({ theme }) => theme.fontWeights.heavy};
     font-size: 38px;
     line-height: 46px;
     margin: 16px 0 32px;
     transition: color 0.3s;
-
-    ${({ $dark }) => $dark && css`
-        color: ${({ theme }) => theme.colors.white};
-    `}
 
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
         font-size: 30px;

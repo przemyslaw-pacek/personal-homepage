@@ -1,15 +1,11 @@
-import styled, { css } from "styled-components";
-import { ReactComponent as Symbol } from "../../../common/data/github.svg";
+import styled from "styled-components";
+import { ReactComponent as Symbol } from "../../Footer/github.svg";
 
 export const Wrapper = styled.header`
-    color: ${({ theme }) => theme.colors.mineShaft};
+    color: ${({ theme }) => theme.colors.text2};
     text-align: center;
     margin-top: 72px;
     transition: color 0.3s;
-
-    ${({ $dark }) => $dark && css`
-        color: ${({ theme }) => theme.colors.white};
-    `}
 
     @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
         margin-top: 48px;
@@ -17,14 +13,10 @@ export const Wrapper = styled.header`
 `;
 
 export const GithubSymbol = styled(Symbol)`
-    color: ${({ theme }) => theme.colors.scienceBlue};
+    color: ${({ theme }) => theme.colors.blue};
     width: 40px;
     height: 40px;
     transition: color 0.3s;
-
-    ${({ $dark }) => $dark && css`
-        color: ${({ theme }) => theme.colors.dodgerBlue};
-    `}
 
     @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
         width: 32px;

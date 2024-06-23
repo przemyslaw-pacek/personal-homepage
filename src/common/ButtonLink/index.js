@@ -1,8 +1,8 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const ButtonLink = styled.a`
-    color: ${({ theme }) => theme.colors.white};
-    background: ${({ theme }) => theme.colors.scienceBlue};
+    color: ${({ theme }) => theme.colors.buttonColor};
+    background: ${({ theme }) => theme.colors.blue};
     text-decoration: none;
     display: inline-flex;
     align-items: center;
@@ -12,31 +12,19 @@ export const ButtonLink = styled.a`
     padding: 12px 16px;
     margin-top: 32px;
     border-radius: 4px;
-    border: 1px solid ${({ theme }) => theme.colors.iron30};
+    border: 1px solid ${({ theme }) => theme.colors.border};
     transition: background 0.3s, 0.3s linear;
-
-    ${({ $dark }) => $dark && css`
-        background: ${({ theme }) => theme.colors.dodgerBlue};
-    `}
 
     &:hover {
         box-shadow:
-            -2px -2px 0px 0px ${({ theme }) => theme.colors.anakiwa},
-            2px 2px 0px 0px ${({ theme }) => theme.colors.anakiwa},
-            -2px 2px 0px 0px ${({ theme }) => theme.colors.anakiwa},
-            2px -2px 0px 0px ${({ theme }) => theme.colors.anakiwa};
-
-        ${({ $dark }) => $dark && css`
-            box-shadow:
-                -2px -2px 0px 0px ${({ theme }) => theme.colors.shipCove},
-                2px 2px 0px 0px ${({ theme }) => theme.colors.shipCove},
-                -2px 2px 0px 0px ${({ theme }) => theme.colors.shipCove},
-                2px -2px 0px 0px ${({ theme }) => theme.colors.shipCove};
-        `}
+            -2px -2px 0px 0px ${({ theme }) => theme.colors.buttonShadow},
+            2px 2px 0px 0px ${({ theme }) => theme.colors.buttonShadow},
+            -2px 2px 0px 0px ${({ theme }) => theme.colors.buttonShadow},
+            2px -2px 0px 0px ${({ theme }) => theme.colors.buttonShadow};
     }
 
     &:active {
-        box-shadow: 0px 2px 0px 0px ${({ theme }) => theme.colors.parsley} inset;
+        box-shadow: 0px 2px 0px 0px ${({ theme }) => theme.colors.buttonActive} inset;
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {

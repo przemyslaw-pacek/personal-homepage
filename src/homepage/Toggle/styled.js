@@ -19,24 +19,19 @@ export const Button = styled.button`
     width: 48px;
     height: 26px;
     border-radius: 13px;
-    background: ${({ theme }) => theme.colors.mercury};
-    border: 1px solid ${({ theme }) => theme.colors.slateGray};
+    background: ${({ theme }) => theme.colors.background3};
+    border: 1px solid ${({ theme }) => theme.colors.text};
     cursor: pointer;
     position: relative;
     transition: background 0.3s, border 0.3s;
-
-    ${({ $dark }) => $dark && css`
-        background: ${({ theme }) => theme.colors.doveGray};
-        border-color: ${({ theme }) => theme.colors.white};
-    `}
 `;
 
 export const Circle = styled.div`
     width: 20px;
     height: 20px;
     border-radius: 10px;
-    color: ${({ theme }) => theme.colors.white};
-    background: ${({ theme }) => theme.colors.slateGray};
+    color: ${({ theme }) => theme.colors.background};
+    background: ${({ theme }) => theme.colors.text};
     line-height: 22.5px;
     position: absolute;
     top: 2px;
@@ -44,8 +39,6 @@ export const Circle = styled.div`
     transition: left 0.3s, color 0.3s, background 0.3s;
 
     ${({ $dark }) => $dark && css`
-        color: ${({ theme }) => theme.colors.mineShaft};
-        background: ${({ theme }) => theme.colors.white};
         left: 24px;
     `}
 `;
