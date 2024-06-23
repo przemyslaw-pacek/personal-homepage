@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ButtonLink = styled.a`
-    color: ${({ theme }) => theme.colors.buttonColor};
+    color: ${({ theme }) => theme.colors.buttonText};
     background: ${({ theme }) => theme.colors.blue};
     text-decoration: none;
     display: inline-flex;
