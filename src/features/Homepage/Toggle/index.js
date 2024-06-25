@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
-import { selectTheme, toggleTheme } from "../Toggle/themeSlice";
+import { selectTheme, toggleTheme } from "./themeSlice";
 import { Button, Circle, Sun, ToggleContent } from "./styled";
-import { Caption } from "../../common/Caption";
+import { Caption } from "../../../common/Caption";
 
 export const Toggle = () => {
     const dispatch = useDispatch();

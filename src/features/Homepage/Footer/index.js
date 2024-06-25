@@ -1,4 +1,4 @@
-import { data } from "../../common/data/data";
+import { data } from "../../../common/data/data";
 import {
     Content,
     Hand,
@@ -12,7 +12,7 @@ import {
     Mail,
     Wrapper
 } from "./styled";
-import { Caption } from "../../common/Caption";
+import { Caption } from "../../../common/Caption";
 
 export const Footer = () => {
     const socialMediaLinks = [

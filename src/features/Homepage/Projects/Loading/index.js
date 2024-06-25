@@ -1,5 +1,5 @@
 import { Spinner, Wrapper } from "./styled";
-import { Paragraph } from "../../../common/Paragraph";
+import { Paragraph } from "../../../../common/Paragraph";
 
 export const Loading = () => (
     <Wrapper>

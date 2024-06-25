@@ -1,6 +1,6 @@
 import { Error } from "./Error";
 import { Loading } from "./Loading";
-import { ProjectTile } from "../../common/ProjectTile";
+import { ProjectTile } from "../../../common/ProjectTile";
 import { Heading } from "./Heading";
 import { ProjectList } from "./styled";
 import { useEffect } from "react";

@@ -1,8 +1,8 @@
-import { data } from "../../common/data/data";
+import { data } from "../../../common/data/data";
 import { Content, Picture, Title, Wrapper, Envelope } from "./styled";
-import { ButtonLink } from "../../common/ButtonLink";
-import { Caption } from "../../common/Caption";
-import { Paragraph } from "../../common/Paragraph";
+import { ButtonLink } from "../../../common/ButtonLink";
+import { Caption } from "../../../common/Caption";
+import { Paragraph } from "../../../common/Paragraph";
 
 export const Header = () => (
     <Wrapper>

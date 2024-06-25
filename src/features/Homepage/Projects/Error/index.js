@@ -1,7 +1,7 @@
-import { data } from "../../../common/data/data";
+import { data } from "../../../../common/data/data";
 import { Attention, DangerIcon, Wrapper } from "./styled";
-import { ButtonLink } from "../../../common/ButtonLink";
-import { Paragraph } from "../../../common/Paragraph";
+import { ButtonLink } from "../../../../common/ButtonLink";
+import { Paragraph } from "../../../../common/Paragraph";
 
 export const Error = () => (
     <Wrapper>
