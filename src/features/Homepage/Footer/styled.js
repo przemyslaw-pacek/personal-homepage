@@ -110,14 +110,14 @@ export const IconLink = styled.a`
 `;
 
 const iconStyles = css`
+    height: auto;
+
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
         width: 40px;
-        height: auto;
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
         width: 32px;
-        height: auto
     }
 `;
 
