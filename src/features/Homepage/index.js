@@ -1,10 +1,10 @@
 import { Container } from "../../common/Container";
 import { SkillsTile } from "../../common/SkillsTile";
 import { data } from '../../common/data/data';
-import { Header } from "../Homepage/Header";
-import { Toggle } from "../Homepage/Toggle";
-import { Projects } from "../Homepage/Projects";
-import { Footer } from "../Homepage/Footer";
+import { Header } from "./Header";
+import { Toggle } from "./Toggle";
+import { Projects } from "./Projects";
+import { Footer } from "./Footer";
 
 const Homepage = () => (
     <Container>
