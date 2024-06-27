@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import image from "../../../common/data/image.png";
+import image from "../../../common/data/image.jpg";
 import { ReactComponent as envelope } from "./envelope.svg";
 
 export const Wrapper = styled.header`
