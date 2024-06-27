@@ -2,6 +2,7 @@ import { data } from "../../../common/data/data";
 import {
     Content,
     Hand,
+    Icon,
     IconFB,
     IconGithub,
     IconInstagram,
@@ -37,14 +38,14 @@ export const Footer = () => {
                 <Icons>
                     {socialMediaLinks.map(link =>
                         data[link.key] && (
-                            <IconLink
-                                key={link.key}
-                                href={data[link.key]}
-                                target="_blank"
-                                rel="noopener noreferrer">
-                                {link.icon}
-                            </IconLink>
-
+                            <Icon key={link.key}>
+                                <IconLink
+                                    href={data[link.key]}
+                                    target="_blank"
+                                    rel="noopener noreferrer">
+                                    {link.icon}
+                                </IconLink>
+                            </Icon>
                         )
                     )}
                 </Icons>

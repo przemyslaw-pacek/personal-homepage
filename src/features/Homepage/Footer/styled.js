@@ -93,6 +93,7 @@ export const Hand = styled(hand)`
 export const Icons = styled.ul`
     display: flex;
     gap: 24px;
+    list-style: none;
     padding: 0;
     
     @media(max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
@@ -102,6 +103,9 @@ export const Icons = styled.ul`
     @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
         gap: 18px;
     }
+`;
+
+export const Icon = styled.li`
 `;
 
 export const IconLink = styled.a`
