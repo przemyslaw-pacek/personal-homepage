@@ -61,7 +61,7 @@ export const Description = styled.p`
 `;
 
 export const Links = styled.div`
-    display: inline-grid;
+    display: grid;
     grid-template-columns: auto auto;
     gap: 8px;
 `;
