@@ -34,7 +34,7 @@ export const data = {
         "Unit testing",
         "JS classes",
     ],
-    githubAPI: "https://api.github.com/users/przemyslaw-pacek/repos?type=owner&sort=created",
+    githubAPI: "https://api.github.com/users/przemyslaw-pacek/repos",
     email: "ppacek@op.pl",
     footer: `I'm always open to new projects. If you have a website,
         dashboard or mobile app in mind and need some help
