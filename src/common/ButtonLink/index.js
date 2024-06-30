@@ -20,7 +20,7 @@ export const ButtonLink = styled.a`
     }
 
     &:active {
-        box-shadow: 0 2px 0 0 ${({ theme }) => theme.colors.buttonActive} inset;
+        box-shadow: 0 2px ${({ theme }) => theme.colors.buttonActive} inset;
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
