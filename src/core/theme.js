@@ -1,18 +1,18 @@
-const breakpoints = {
-    laptop: 1156,
-    tablet: 768,
-    phone: 426,
-};
-
-const fontWeights = {
-    semiBold: 600,
-    bold: 700,
-    heavy: 900,
+const common = {
+    breakpoints: {
+        laptop: 1156,
+        tablet: 768,
+        phone: 426,
+    },
+    fontWeights: {
+        semiBold: 600,
+        bold: 700,
+        heavy: 900,
+    },
 };
 
 export const lightTheme = {
-    breakpoints,
-    fontWeights,
+    ...common,
     colors: {
         background: "#FBFBFB",
         background2: "#FFFFFF",
@@ -33,8 +33,7 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-    breakpoints,
-    fontWeights,
+    ...common,
     colors: {
         background: "#252525",
         background2: "#363636B8",
