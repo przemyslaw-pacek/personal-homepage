@@ -16,15 +16,11 @@ export const ButtonLink = styled.a`
     transition: background 0.3s, 0.3s linear;
 
     &:hover {
-        box-shadow:
-            -2px -2px 0px 0px ${({ theme }) => theme.colors.buttonShadow},
-            2px 2px 0px 0px ${({ theme }) => theme.colors.buttonShadow},
-            -2px 2px 0px 0px ${({ theme }) => theme.colors.buttonShadow},
-            2px -2px 0px 0px ${({ theme }) => theme.colors.buttonShadow};
+        box-shadow: 0 0 0 2px ${({ theme }) => theme.colors.buttonShadow};
     }
 
     &:active {
-        box-shadow: 0px 2px 0px 0px ${({ theme }) => theme.colors.buttonActive} inset;
+        box-shadow: 0 2px 0 0 ${({ theme }) => theme.colors.buttonActive} inset;
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
