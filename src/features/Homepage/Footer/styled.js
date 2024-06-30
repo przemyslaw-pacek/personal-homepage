@@ -21,6 +21,7 @@ export const Content = styled.div`
 
 const links = css`
     color: inherit;
+    transition: 0.3s linear;
     
     &:hover {
         color: ${({ theme }) => theme.colors.blue};
