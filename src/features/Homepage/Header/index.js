@@ -11,7 +11,7 @@ export const Header = () => (
             <Caption>This is</Caption>
             <Title>{data.name}</Title>
             <Paragraph>{data.info}</Paragraph>
-            <ButtonLink href={`mailto:${data.email}`}>
+            <ButtonLink href={`mailto:${data.email}`} title={data.email}>
                 <Envelope />
                 Hire Me
             </ButtonLink>
