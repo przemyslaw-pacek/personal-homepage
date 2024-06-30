@@ -16,7 +16,6 @@ export const GithubSymbol = styled(Symbol)`
     color: ${({ theme }) => theme.colors.blue};
     width: 40px;
     height: 40px;
-    transition: color 0.3s;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
         width: 32px;

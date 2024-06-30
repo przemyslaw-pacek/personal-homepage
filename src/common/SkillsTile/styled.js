@@ -49,7 +49,6 @@ export const List = styled.ul`
     ::marker {
         color: ${({ theme }) => theme.colors.blue};
         font-size: 23px;
-        transition: color 0.3s;
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {

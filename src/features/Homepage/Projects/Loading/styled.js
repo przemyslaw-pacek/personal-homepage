@@ -26,7 +26,6 @@ export const Spinner = styled(spinner)`
     animation: ${rotate} 1s linear infinite;
     color: ${({ theme }) => theme.colors.blue};
     margin-top: 48px;
-    transition: color 0.3s;
 
     & circle {
         stroke: ${({ theme }) => theme.colors.circle};
