@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProjectList = styled.section`
     margin: 24px 0 120px;
     display: grid;
-    grid-template-columns: repeat(2, minmax(auto, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 32px;
     
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
@@ -13,7 +13,7 @@ export const ProjectList = styled.section`
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
         margin-bottom: 72px;
-        grid-template-columns: minmax(auto, 1fr);
+        grid-template-columns: 1fr;
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.phone}px) {
