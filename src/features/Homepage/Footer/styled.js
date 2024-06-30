@@ -16,7 +16,6 @@ export const Wrapper = styled.footer`
 
 export const Content = styled.div`
     color: ${({ theme }) => theme.colors.text2};
-    transition: color 0.3s;
 `;
 
 const links = css`
@@ -60,6 +59,7 @@ export const Info = styled.div`
     font-size: 18px;
     line-height: 25px;
     margin: 24px 0 56px;
+    transition: color 0.3s;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
         font-size: 16px;
