@@ -15,7 +15,7 @@ export const Wrapper = styled.footer`
 `;
 
 export const Content = styled.div`
-    color: ${({ theme }) => theme.colors.text2};
+    color: ${({ theme }) => theme.colors.headerText};
 `;
 
 const links = css`

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { ReactComponent as Symbol } from "../../Footer/github.svg";
 
 export const Wrapper = styled.header`
-    color: ${({ theme }) => theme.colors.text2};
+    color: ${({ theme }) => theme.colors.headerText};
     text-align: center;
     margin-top: 72px;
     transition: color 0.3s;

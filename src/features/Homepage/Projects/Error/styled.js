@@ -4,7 +4,7 @@ import { ReactComponent as danger } from "./danger.svg";
 export const Wrapper = styled.div`
     text-align: center;
     margin: 88px 0 140px;
-    color: ${({ theme }) => theme.colors.text2};
+    color: ${({ theme }) => theme.colors.headerText};
     transition: color 0.3s;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tablet}px) {

@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.section`
-    background: ${({ theme }) => theme.colors.background2};
+    background: ${({ theme }) => theme.colors.tile.background};
     border-radius: 4px;
     margin-top: 72px;
-    box-shadow: 0 16px 58px ${({ theme }) => theme.colors.tileShadow},
-                0 -2px 50px ${({ theme }) => theme.colors.tileShadow2};
+    box-shadow: 0 16px 58px ${({ theme }) => theme.colors.tile.shadow},
+                0 -2px 50px ${({ theme }) => theme.colors.tile.shadow2};
     transition: background 0.3s;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
@@ -14,13 +14,13 @@ export const Wrapper = styled.section`
 `;
 
 export const Title = styled.h2`
-    color: ${({ theme }) => theme.colors.text2};
+    color: ${({ theme }) => theme.colors.headerText};
     font-weight: ${({ theme }) => theme.fontWeights.heavy};
     font-size: 30px;
     line-height: 36px;
     padding: 32px 0 15px;
     margin: 32px;
-    border-bottom: 1px solid ${({ theme }) => theme.colors.background3};
+    border-bottom: 1px solid ${({ theme }) => theme.colors.toggleBackground};
     transition: color 0.3s, border 0.3s;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {

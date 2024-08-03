@@ -47,7 +47,7 @@ export const Content = styled.div`
 `;
 
 export const Title = styled.h1`
-    color: ${({ theme }) => theme.colors.text2};
+    color: ${({ theme }) => theme.colors.headerText};
     font-weight: ${({ theme }) => theme.fontWeights.heavy};
     font-size: 38px;
     line-height: 46px;

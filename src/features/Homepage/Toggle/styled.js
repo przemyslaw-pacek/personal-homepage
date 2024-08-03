@@ -19,7 +19,7 @@ export const Button = styled.button`
     width: 48px;
     height: 26px;
     border-radius: 13px;
-    background: ${({ theme }) => theme.colors.background3};
+    background: ${({ theme }) => theme.colors.toggleBackground};
     border: 1px solid ${({ theme }) => theme.colors.text};
     cursor: pointer;
     position: relative;

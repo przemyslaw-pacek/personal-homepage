@@ -1,19 +1,19 @@
 import styled from "styled-components";
 
 export const Content = styled.div`
-    background: ${({ theme }) => theme.colors.background2};
+    background: ${({ theme }) => theme.colors.tile.background};
     max-width: 592px;
     font-size: 18px;
     line-height: 25px;
     padding: 50px;
-    border: 6px solid ${({ theme }) => theme.colors.border};
+    border: 6px solid ${({ theme }) => theme.colors.tile.border};
     border-radius: 4px;
-    box-shadow: 0 16px 58px ${({ theme }) => theme.colors.tileShadow},
-                0 -2px 50px ${({ theme }) => theme.colors.tileShadow2};
+    box-shadow: 0 16px 58px ${({ theme }) => theme.colors.tile.shadow},
+                0 -2px 50px ${({ theme }) => theme.colors.tile.shadow2};
     transition: background 0.3s, border 0.3s;
 
     &:hover {
-        border-color: ${({ theme }) => theme.colors.border2};
+        border-color: ${({ theme }) => theme.colors.tile.hover};
     }
 
     @media(max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
@@ -71,7 +71,7 @@ export const LinkTitle = styled.span`
 
 export const Link = styled.a`
     color: ${({ theme }) => theme.colors.blue};
-    text-decoration-color: ${({ theme }) => theme.colors.border3};
+    text-decoration-color: ${({ theme }) => theme.colors.bottomBorder};
     text-underline-offset: 4px;
     text-decoration-thickness: 1px;
     transition: color 0.3s, text-decoration-color 0.3s;
