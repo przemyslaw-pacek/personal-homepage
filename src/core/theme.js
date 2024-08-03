@@ -6,7 +6,6 @@ const colorNames = {
     iron10: "#D1D5DA1A",
     iron30: "#D1D5DA4D",
     anakiwa: "#8CC2FF",
-    violet2: "#090A3305",
     violet3: "#090A3308",
     parsley: "#14462033",
     dodgerBlue: "#2188FF",
@@ -48,7 +47,6 @@ export const lightTheme = {
             border: colorNames.iron30,
             hover: colorNames.scienceBlue20,
             shadow: colorNames.violet3,
-            shadow2: colorNames.violet2,
         },
         button: {
             text: colorNames.white,
@@ -73,7 +71,6 @@ export const darkTheme = {
             border: colorNames.iron10,
             hover: colorNames.scienceBlue50,
             shadow: colorNames.violet3,
-            shadow2: colorNames.violet2,
         },
         button: {
             text: colorNames.white,

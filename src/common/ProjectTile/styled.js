@@ -9,7 +9,7 @@ export const Content = styled.div`
     border: 6px solid ${({ theme }) => theme.colors.tile.border};
     border-radius: 4px;
     box-shadow: 0 16px 58px ${({ theme }) => theme.colors.tile.shadow},
-                0 -2px 50px ${({ theme }) => theme.colors.tile.shadow2};
+                0 -2px 50px ${({ theme }) => theme.colors.tile.shadow};
     transition: background 0.3s, border 0.3s;
 
     &:hover {

@@ -5,7 +5,7 @@ export const Wrapper = styled.section`
     border-radius: 4px;
     margin-top: 72px;
     box-shadow: 0 16px 58px ${({ theme }) => theme.colors.tile.shadow},
-                0 -2px 50px ${({ theme }) => theme.colors.tile.shadow2};
+                0 -2px 50px ${({ theme }) => theme.colors.tile.shadow};
     transition: background 0.3s;
 
     @media(max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
