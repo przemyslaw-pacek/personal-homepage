@@ -24,7 +24,7 @@ export const data = {
     "TypeScript",
     "Working with API (fetch, axios)",
   ],
-  toLearn: ["Node.js", "React Context", "React Native", "Vue.js"],
+  toLearn: ["Node.js", "Next.js", "React Context", "React Native", "Vue.js"],
   githubAPI: "https://api.github.com/users/przemyslaw-pacek/repos",
   email: "ppacek@op.pl",
   footer: `I'm always open to new projects. If you have a website,
