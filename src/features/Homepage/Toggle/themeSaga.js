@@ -3,10 +3,10 @@ import { selectTheme } from "./themeSlice";
 import { saveThemeInLocalStorage } from "./themeLocalStorage";
 
 function* saveThemeInLocalStorageHandler() {
-    const darkMode = yield select(selectTheme);
-    yield call(saveThemeInLocalStorage, darkMode);
+  const darkMode = yield select(selectTheme);
+  yield call(saveThemeInLocalStorage, darkMode);
 }
 
 export function* themeSaga() {
-    yield takeEvery("*", saveThemeInLocalStorageHandler);
+  yield takeEvery("*", saveThemeInLocalStorageHandler);
 }
