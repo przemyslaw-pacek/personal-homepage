@@ -20,6 +20,7 @@ export const data = {
     "Semantic & accessible HTML",
     "Styled Components",
     "Tailwind CSS",
+    "TanStack Query",
     "Teamwork",
     "TypeScript",
     "Working with API (fetch, axios)",
