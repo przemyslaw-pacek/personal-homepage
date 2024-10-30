@@ -23,6 +23,7 @@ If you want to check, clik [here](https://przemyslaw-pacek.github.io/personal-ho
 - Error Handling
 - Styled Components
 - Fetch
+- TanStack Query
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

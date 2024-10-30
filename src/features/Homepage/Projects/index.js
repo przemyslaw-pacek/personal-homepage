@@ -3,27 +3,25 @@ import { Loading } from "./Loading";
 import { ProjectTile } from "../../../common/ProjectTile";
 import { Heading } from "./Heading";
 import { ProjectList } from "./styled";
-import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { fetchProjects, selectProjectsState } from "./projectsSlice";
+import { useQuery } from "@tanstack/react-query";
+import { fetchProjects } from "./fetchProjects";
 
 export const Projects = () => {
-  const dispatch = useDispatch();
-  const { loading, error, projects } = useSelector(selectProjectsState);
-
-  useEffect(() => {
-    dispatch(fetchProjects());
-  }, [dispatch]);
+  const { isLoading, error, data } = useQuery({
+    queryKey: ["repos"],
+    queryFn: fetchProjects,
+    retry: false,
+  });
 
   const appName = window.location.pathname.split("/")[1];
-  const filteredProjects = projects.filter(
-    (project) => project.name !== appName
-  );
+  const filteredProjects = data
+    ? data.filter((project) => project.name !== appName)
+    : [];
 
   return (
     <>
       <Heading />
-      {loading ? (
+      {isLoading ? (
         <Loading />
       ) : error ? (
         <Error />

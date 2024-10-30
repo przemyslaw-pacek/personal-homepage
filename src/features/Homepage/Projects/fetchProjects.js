@@ -1,6 +1,6 @@
 import { data } from "../../../common/data/data";
 
-export const getProjects = async () => {
+export const fetchProjects = async () => {
   const response = await fetch(`${data.githubAPI}`);
 
   if (!response.ok) {
