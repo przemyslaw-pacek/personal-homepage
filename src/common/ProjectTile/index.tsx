@@ -7,7 +7,19 @@ import {
   Links,
 } from "./styled";
 
-export const ProjectTile = ({ codeLink, demoLink, description, title }) => (
+interface ProjectTileProps {
+  codeLink: string;
+  demoLink: string;
+  description: string;
+  title: string;
+}
+
+export const ProjectTile = ({
+  codeLink,
+  demoLink,
+  description,
+  title,
+}: ProjectTileProps) => (
   <Content>
     <Headline>{title.replace(/-/g, " ")}</Headline>
     <Description>{description}</Description>

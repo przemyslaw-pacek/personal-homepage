@@ -15,8 +15,13 @@ import {
 } from "./styled";
 import { Caption } from "../../../common/Caption";
 
+interface SocialMediaProps {
+  key: keyof typeof data;
+  icon: JSX.Element;
+}
+
 export const Footer = () => {
-  const socialMediaLinks = [
+  const socialMediaLinks: SocialMediaProps[] = [
     { key: "github", icon: <IconGithub /> },
     { key: "facebook", icon: <IconFB /> },
     { key: "linkedIN", icon: <IconLinkedIN /> },
@@ -37,7 +42,7 @@ export const Footer = () => {
               data[link.key] && (
                 <Icon key={link.key}>
                   <IconLink
-                    href={data[link.key]}
+                    href={data[link.key] as string}
                     target="_blank"
                     rel="noopener noreferrer"
                   >

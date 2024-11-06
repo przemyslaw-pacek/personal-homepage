@@ -5,9 +5,10 @@ import { Heading } from "./Heading";
 import { ProjectList } from "./styled";
 import { useQuery } from "@tanstack/react-query";
 import { fetchProjects } from "./fetchProjects";
+import { Project } from "../../../core/types";
 
 export const Projects = () => {
-  const { isLoading, error, data } = useQuery({
+  const { isLoading, error, data } = useQuery<Project[]>({
     queryKey: ["repos"],
     queryFn: fetchProjects,
     retry: false,
@@ -15,7 +16,7 @@ export const Projects = () => {
 
   const appName = window.location.pathname.split("/")[1];
   const filteredProjects = data
-    ? data.filter((project) => project.name !== appName)
+    ? data.filter((project: Project) => project.name !== appName)
     : [];
 
   return (

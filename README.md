@@ -24,6 +24,7 @@ If you want to check, clik [here](https://przemyslaw-pacek.github.io/personal-ho
 - Styled Components
 - Fetch
 - TanStack Query
+- Typescript
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

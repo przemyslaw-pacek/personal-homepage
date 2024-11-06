@@ -26,7 +26,9 @@ export const Button = styled.button`
   transition: background 0.3s, border 0.3s;
 `;
 
-export const Circle = styled.span`
+export const Circle = styled.span<{
+  $dark?: boolean;
+}>`
   width: 20px;
   height: 20px;
   border-radius: 10px;

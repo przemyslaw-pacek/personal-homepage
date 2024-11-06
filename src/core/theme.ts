@@ -17,7 +17,7 @@ const colorNames = {
   doveGray: "#6E6E6E",
   mineShaft: "#252525",
   mineShaftLighter: "#363636B8",
-};
+} as const;
 
 const common = {
   breakpoints: {
@@ -30,9 +30,32 @@ const common = {
     bold: 700,
     heavy: 900,
   },
+} as const;
+
+type ThemeColors = {
+  blue: string;
+  background: string;
+  text: string;
+  headerText: string;
+  bottomBorder: string;
+  toggleBackground: string;
+  circle: string;
+  tile: {
+    background: string;
+    border: string;
+    hover: string;
+    shadow: string;
+  };
+  button: {
+    text: string;
+    shadow: string;
+    active: string;
+  };
 };
 
-export const lightTheme = {
+type Theme = typeof common & { colors: ThemeColors };
+
+export const lightTheme: Theme = {
   ...common,
   colors: {
     blue: colorNames.scienceBlue,
@@ -56,7 +79,7 @@ export const lightTheme = {
   },
 };
 
-export const darkTheme = {
+export const darkTheme: Theme = {
   ...common,
   colors: {
     blue: colorNames.dodgerBlue,

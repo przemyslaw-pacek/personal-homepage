@@ -1,6 +1,11 @@
 import { Item, List, Title, Wrapper } from "./styled";
 
-export const SkillsTile = ({ title, skills }) => (
+interface SkillsTileProps {
+  title: string;
+  skills: Array<string>;
+}
+
+export const SkillsTile = ({ title, skills }: SkillsTileProps) => (
   <Wrapper>
     <Title>{title}</Title>
     <List>

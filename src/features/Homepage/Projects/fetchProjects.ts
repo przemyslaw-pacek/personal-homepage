@@ -1,4 +1,5 @@
 import { data } from "../../../common/data/data";
+import { Project } from "../../../core/types";
 
 export const fetchProjects = async () => {
   await new Promise((resolve) => setTimeout(resolve, 2000));
@@ -9,5 +10,5 @@ export const fetchProjects = async () => {
     throw new Error(response.statusText);
   }
 
-  return await response.json();
+  return (await response.json()) as Project[];
 };
