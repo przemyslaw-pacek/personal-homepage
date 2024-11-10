@@ -5,45 +5,41 @@ import { ReactComponent as envelope } from "./envelope.svg";
 export const Wrapper = styled.header`
   display: grid;
   grid-template-columns: auto 1fr;
+  gap: 72px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
+    gap: 42px;
+  }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     grid-template-columns: auto;
+    gap: 32px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.phone}px) {
+    gap: 16px;
   }
 `;
 
 export const Picture = styled.div`
-  width: 384px;
-  height: 384px;
+  width: 288px;
+  aspect-ratio: 0.75;
   background-image: url("${image}");
   background-size: cover;
   background-position: center;
-  border-radius: 50%;
+  border-radius: 2%;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
-    width: 256px;
-    height: 256px;
+    width: 192px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}px) {
-    width: 128px;
-    height: 128px;
+    width: 96px;
   }
 `;
 
 export const Content = styled.div`
-  margin: 64px 127px 73px 72px;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
-    margin: 32px 86px 48px 36px;
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
-    margin: 32px 0 0;
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.phone}px) {
-    margin: 16px 0 0;
-  }
+  align-self: center;
 `;
 
 export const Title = styled.h1`

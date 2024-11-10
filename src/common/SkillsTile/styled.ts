@@ -8,8 +8,8 @@ export const Wrapper = styled.section`
     0 -2px 50px ${({ theme }) => theme.colors.tile.shadow};
   transition: background 0.3s;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
-    margin-top: 48px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
+    margin-top: 42px;
   }
 `;
 

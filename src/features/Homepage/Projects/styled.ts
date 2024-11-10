@@ -17,7 +17,7 @@ export const ProjectList = styled.section`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}px) {
-    margin-bottom: 48px;
+    margin-bottom: 40px;
     gap: 16px;
   }
 `;
