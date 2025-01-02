@@ -39,6 +39,7 @@ export const Picture = styled.div`
 `;
 
 export const Content = styled.div`
+  max-width: 630px;
   align-self: center;
 `;
 
