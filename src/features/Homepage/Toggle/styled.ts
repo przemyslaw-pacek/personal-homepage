@@ -34,7 +34,7 @@ export const Circle = styled.span<{
   border-radius: 10px;
   color: ${({ theme }) => theme.colors.background};
   background: ${({ theme }) => theme.colors.text};
-  line-height: 22.5px;
+  line-height: 1.4;
   position: absolute;
   top: 2px;
   left: 2px;

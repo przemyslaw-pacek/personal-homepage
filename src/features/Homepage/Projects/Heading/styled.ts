@@ -26,17 +26,15 @@ export const GithubSymbol = styled(Symbol)`
 export const Title = styled.h2`
   font-weight: ${({ theme }) => theme.fontWeights.heavy};
   font-size: 30px;
-  line-height: 36px;
+  line-height: 1.2;
   margin: 12px 0 8px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
     font-size: 24px;
-    line-height: 29px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}px) {
     font-size: 18px;
-    line-height: 22px;
     margin-bottom: 16px;
   }
 `;

@@ -38,18 +38,16 @@ export const Mail = styled.a`
   text-decoration: none;
   font-weight: ${({ theme }) => theme.fontWeights.heavy};
   font-size: 32px;
-  line-height: 39px;
+  line-height: 1.2;
   margin-top: 24px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
     font-size: 26px;
-    line-height: 30px;
     margin-top: 18px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}px) {
     font-size: 18px;
-    line-height: 22px;
     margin-top: 12px;
   }
 `;
@@ -57,19 +55,17 @@ export const Mail = styled.a`
 export const Info = styled.div`
   max-width: 670px;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 1.4;
   margin: 24px 0 56px;
   transition: color 0.3s;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
     font-size: 16px;
-    line-height: 21px;
     margin: 18px 0 48px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}px) {
     font-size: 14px;
-    line-height: 17px;
     margin: 12px 0 40px;
   }
 `;

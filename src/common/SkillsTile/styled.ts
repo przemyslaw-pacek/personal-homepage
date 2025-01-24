@@ -17,7 +17,7 @@ export const Title = styled.h2`
   color: ${({ theme }) => theme.colors.headerText};
   font-weight: ${({ theme }) => theme.fontWeights.heavy};
   font-size: 30px;
-  line-height: 36px;
+  line-height: 1.2;
   padding: 32px 0 15px;
   margin: 32px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.toggleBackground};
@@ -25,14 +25,12 @@ export const Title = styled.h2`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
     font-size: 26px;
-    line-height: 30px;
     padding-top: 24px;
     margin: 24px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}px) {
     font-size: 18px;
-    line-height: 22px;
     padding: 16px 0 12px;
     margin: 16px;
   }
@@ -62,7 +60,6 @@ export const List = styled.ul`
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}px) {
     padding-left: 32px;
     font-size: 14px;
-    line-height: 17px;
 
     ::marker {
       font-size: 14px;

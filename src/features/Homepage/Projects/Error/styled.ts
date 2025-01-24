@@ -25,7 +25,7 @@ export const DangerIcon = styled(danger)`
 
 export const Attention = styled.h3`
   font-size: 24px;
-  line-height: 30px;
+  line-height: 1.4;
   margin: 16px 0 32px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
@@ -34,6 +34,5 @@ export const Attention = styled.h3`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}px) {
     font-size: 17px;
-    line-height: 24px;
   }
 `;

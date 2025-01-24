@@ -7,7 +7,7 @@ export const Caption = styled.p<{
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   font-size: 12px;
   letter-spacing: 0;
-  line-height: 16px;
+  line-height: 1.4;
   margin: 0;
 
   ${({ $toggleMode }) =>

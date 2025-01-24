@@ -4,7 +4,7 @@ export const Content = styled.div`
   background: ${({ theme }) => theme.colors.tile.background};
   max-width: 592px;
   font-size: 18px;
-  line-height: 25px;
+  line-height: 1.4;
   padding: 50px;
   border: 6px solid ${({ theme }) => theme.colors.tile.border};
   border-radius: 4px;
@@ -23,12 +23,10 @@ export const Content = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     max-width: 692px;
     font-size: 16px;
-    line-height: 20px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}px) {
     font-size: 14px;
-    line-height: 17px;
     padding: 18px;
   }
 `;
@@ -36,19 +34,17 @@ export const Content = styled.div`
 export const Headline = styled.h3`
   color: ${({ theme }) => theme.colors.blue};
   font-size: 24px;
-  line-height: 29px;
+  line-height: 1.2;
   margin-top: 0;
   transition: color 0.3s;
   text-transform: capitalize;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     font-size: 20px;
-    line-height: 24px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}px) {
     font-size: 16px;
-    line-height: 20px;
   }
 `;
 

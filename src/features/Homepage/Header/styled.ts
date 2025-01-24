@@ -47,19 +47,17 @@ export const Title = styled.h1`
   color: ${({ theme }) => theme.colors.headerText};
   font-weight: ${({ theme }) => theme.fontWeights.heavy};
   font-size: 38px;
-  line-height: 46px;
+  line-height: 1.2;
   margin: 16px 0 32px;
   transition: color 0.3s;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.laptop}px) {
     font-size: 30px;
-    line-height: 32px;
     margin: 12px 0 16px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.phone}px) {
     font-size: 22px;
-    line-height: 27px;
     margin-top: 8px;
   }
 `;
