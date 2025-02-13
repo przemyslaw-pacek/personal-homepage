@@ -14,7 +14,7 @@ export const data = {
     "React Router",
     "Redux Saga",
     "Responsive Web Design",
-    "Styled-omponents",
+    "Styled-components",
     "Tailwind CSS",
     "TanStack Query",
     "Teamwork",
