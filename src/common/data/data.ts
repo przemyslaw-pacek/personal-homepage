@@ -20,6 +20,7 @@ export const data = {
     "Teamwork",
     "TypeScript",
     "Working with API (fetch, axios)",
+    "Angular",
   ],
   toLearn: ["Node.js", "Next.js", "React Context", "React Native", "Vue.js"],
   githubAPI: "https://api.github.com/users/przemyslaw-pacek/repos",
